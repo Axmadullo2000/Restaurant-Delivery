@@ -36,3 +36,217 @@
     transform: rotate(360deg);
   }
 }
+
+main {
+  height: calc(100vh - 64px - 254px)
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 5px 22px;
+}
+
+.recipe_block h2 {
+  font-size:30px;
+}
+
+.card {
+  transition: .9s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+  transition: .9s ease;
+  cursor: pointer;
+} 
+
+.card .card-image .card-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-shadow: 1px 2px 1px gold;
+  font-size: 24px;
+}
+
+.project__logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.recipe__img {
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.recipe__name {
+  font-size: 22px;
+}
+
+.recipe__instruction {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 45px;
+}
+
+table {
+  margin-bottom: 40px;
+}
+
+.recipe_list {
+  display: block;
+  margin-top: 30px;
+}
+
+iframe {
+  max-width: 100%;
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.show__recipe {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.goBack {
+  position: absolute;
+  top: 80px;
+  left: 12px;
+}
+
+.goBackFromProduct {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+}
+
+.recipe_block h1 {
+  font-size: 38px;
+}
+
+
+.search_form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 12px;
+  max-width: 100%;
+}
+
+.searchInCategories {
+  position: absolute;
+  right: 0%!important;
+  top: 10px;
+}
+
+.product__field {
+  max-width: 100%;
+  width: 800px!important;
+}
+
+/* meadia queries */
+
+@media(max-width: 1000px) {
+  
+  .searchInCategories {
+    top: 5px;
+  }
+  .search_form {
+    justify-content: unset;
+    width: 800px!important;
+  }
+}
+
+@media (max-width: 900px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  .search_form {
+    width: 100%!important;
+  }
+  .product__field {
+    width: 600px!important;
+  }
+}
+
+@media (max-width: 880px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 6px 12px;
+  }
+  .project__logo {
+    font-size: 28px;
+  }
+  .search_form {
+    width: 400px!important;
+  }
+  .searchMealByCategory {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 672px) {
+  .recipe_block h1 {
+    font-size: 32px;
+  }
+  .recipe_block h2 {
+    font-size: 24px;
+  }
+
+  .goBack {
+    top: 10px;
+    left: 0px;
+  }
+
+  .goBackFromProduct {
+    top: 10px;
+    left: 0px;
+  }
+  .product__field {
+    width: 450px!important;
+  }
+}
+
+@media (max-width: 576px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 460px) {
+  .product__field {
+    width: 320px!important;
+  }
+}
+
+@media (max-width: 420px) {
+  .project__logo {
+    font-size: 22px;
+  }
+  .product__field {
+    width: 290px!important;
+  }
+}
+
+@media (max-width: 350px) {
+  .card .card-image .card-title {
+    font-size: 16px;
+    top: 25%;
+  }
+}
+
